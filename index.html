@@ -1,0 +1,791 @@
+<!DOCTYPE html>
+<html lang="ja">
+<HEAD>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=700">
+<script src="smoothscroll.js" type="text/javascript"></script> 
+
+<META http-equiv="Content-Style-Type" content="text/css">
+<LINK rel="stylesheet" href="kenbun.css">
+
+<TITLE>シルフェイド見聞録 アーカイブページ</TITLE>
+
+  <style>
+    /* ボディ、フォント指定 */
+    body {
+      /*padding-top: 60px; /* メニューの高さ分スペース確保 */
+      margin: 0;
+      background-color: #ffffff;
+      -webkit-font-smoothing: optimizeSpeed;
+      font-smooth: never;
+    }
+    
+    /* 上部固定ナビゲーション */
+    .fixed-menu {
+      background: rgba(246, 249, 255, 0.9); /* 半透明系の淡いクール色 */
+      top: 0;
+      left: 0;  /* ★＠＠＠＠ 左のフローメニューの分 アーカイブ時は0に */
+      width:calc(100% - 0px); /* ★＠＠＠＠ 左のフローメニューの分 アーカイブ時は100％に */
+      box-sizing: border-box;
+      position: fixed;
+      padding: 6px 14px;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      border-radius: 0 0 20px 20px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+      z-index: 1000;
+	  display: inline-block;
+	  line-height: 1.7;
+	  flex-wrap: wrap; 
+	  min-width:680px;
+    }
+
+    .fixed-menu a {
+      display: inline-block; /* ブロック化して折り返せるようにする */
+      white-space: nowrap;   /* 1項目内の改行は防ぐ */
+      text-decoration: none;
+      font-weight: bold;
+      color: #004466;
+      font-size: 14px;
+      padding: 2px 8px;
+      transition: all 0.2s;
+      border-radius: 6px;
+    }
+
+    .fixed-menu a:hover {
+      background-color: #a5e5c6;
+      color: #002233;
+    }
+    
+.fixed-menu A.g:LINK,.fixed-menu A.g:VISITED{color:#38b68c;text-decoration: none;}
+.fixed-menu A.g:HOVER,.fixed-menu A.g:ACTIVE{color: #002233;text-decoration: none;}
+
+.fixed-menu A.blue:LINK,.fixed-menu A.blue:VISITED{color:#486cff;text-decoration: none;}
+.fixed-menu A.blue:HOVER,.fixed-menu A.blue:ACTIVE{
+      background-color: #aacfff;color : #444477;text-decoration: none;}
+
+
+
+  </style>
+  
+</HEAD>
+<BODY>
+  
+    <!-- 上部固定メニュー -->
+  <nav class="fixed-menu"><CENTER>
+    <a href="../" class="blue">←ホームへ</a>
+  <SMALL>シルフェイド見聞録</SMALL>
+    <a href="#top" class="g">タイトル</a>
+    <a href="#character" class="g">ストーリー･キャラ紹介</a>
+    <a href="#battle" class="g">戦闘システム</a>
+    <a href="#hint" class="g">攻略</a>
+    <a href="#screenshot" class="g">スクリーンショット</a>
+    
+
+    </CENTER>
+  </nav>
+  <!-- 上部固定メニューここまで -->
+  
+<a id="top"></a>
+<BR><BR><BR>
+<CENTER>
+<TABLE class="koi_back">
+  <TBODY>
+    <TR>
+      <TD align="center" nowrap width="600"><BR><BR><BR>↑のメニューから見たい項目を選んでください。<BR>
+      <BR>
+      
+      <B><font size="+2">『シルフェイド見聞録』　アーカイブページ</font></B>
+      <TABLE cellspacing="1">
+        <TBODY>
+          <TR>
+            <TD nowrap>
+            <IMG src="kenbunroku_top.jpg" border="0" alt="シルフェイド見聞録" style="border:1px solid #aaf;"></TD>
+          </TR>
+        </TBODY>
+      </TABLE>
+      『シルフェイド見聞録』はコマンド選択式の連載アドベンチャーゲームです<BR>
+      <BR>
+<HR width="80%" size="1" color=#8888aa>
+      <BR>
+      [RPGツクール2000作品]　フリーソフト<BR>
+      <BR>
+      【ジャンル】　アドベンチャーゲーム<BR>
+      【対応OS】　Windows系98/98SE/ME/2000/XP～以降<BR>
+      <BR>
+      【製作期間】 2001年4月～2006年連載中断<BR>
+      <BR>
+      <FONT size="+1"><A href="https://github.com/smokingwolf/game_silfade_kenbunroku/releases/download/v1.62/SllfadeKenbunroku1.62.zip" class="blue" target="_blank"><U><B>シルフェイド見聞録のダウンロード</B></U> <BR>
+      (Zip 2.8MB / GitHubより直接ダウンロード)</A></FONT>
+      <BR>
+      <BR>
+      <B><FONT color="#ff0000">※このゲームはシークエンス6までで開発が中断されています。<BR>未完ですのであらかじめご了承ください。</FONT></B><BR>
+      <BR>
+      <BR>
+      <B>Q.続きは出ますか？</B><BR>
+      <BR>
+      「現状のデータからの」続きは出ません。<BR>
+      これを作っていたツールでは続きを作るのが面倒くさすぎること<BR>
+      作ったのが10年以上前で当時の自分とはすでにセンスが別物になってしまっていること、<BR>
+      シルフェイド見聞録への期待の高さに応えられないであろうことへの自信不足によって、<BR>
+      このデータからの連載続行を行う予定はありません。<BR>
+      <BR>
+      何かのきっかけでストーリー作りに自信を得られた場合には、<BR>
+      「完全に当時とはセンスが異なる」という前提のもとで<BR>
+      「新シルフェイド見聞録」として完結までのリメイクを行うかもしれません。<BR>
+      または、永久凍結になると思います。<BR>
+      <BR>
+      <BR>
+      <HR>
+      2006/3/15 　<B>シークエンス6　『真実の目覚め』</B>　を追加！<BR>
+      <HR>
+      <BR>
+      <BR>
+      <BR>
+      <TABLE class="gray" cellspacing="1" cellpadding="4">
+<TBODY class="ten">
+<TR>
+            <TD class="gray" nowrap>
+<CENTER><FONT class="fw">シル見の主なレビュー・賞歴一覧</FONT></CENTER>
+</TD>
+          </TR>
+          <TR class=fg>
+<TD class="white"><B>■　<A href="http://freegame.on.arena.ne.jp/" target="_blank">夢現</A>　■　</B>
+［<B><A href="https://web.archive.org/web/20151130000843/http://freegame.on.arena.ne.jp/rank/game/silfade.html" target="_blank" class="red">レビュー(インターネットアーカイブ)</A></B>］　<br>
+            ★フリーゲーム大賞　<BR>
+            　第二回<B>銀賞</B>　第三回<B>大賞</B>　第四回<B>金賞</B><BR>
+            　第五回<B>大賞</B>　第六回<B>大賞</B>　第七回<B>金賞</B>　<BR>
+            　第八回<B>金賞</B><BR>
+            <BR>
+            <B>■　<A href="http://www.freem.ne.jp/" target="_blank">ふりーむ！</A>　■　</B>
+［<B><A href="https://web.archive.org/web/20210116051650/http://www.freem.ne.jp/game/rev/236.html" target="_blank" class="red">レビュー(インターネットアーカイブ)</A></B>］<BR>
+            ★FREE GAME AWORDS 2003　<B>グランプリ</B><BR>
+            <BR>
+              <B>■　<A href="http://www.forest.impress.co.jp/" target="_blank">窓の杜</A>　■　</B>
+［<B><A href="http://www.forest.impress.co.jp/article/2003/09/19/silfade.html" target="_blank" class="red">レビュー</A></B>］<BR> 　　(リンク先がなくなっていた場合は<B><a href="https://web.archive.org/web/20240419202909/https://forest.watch.impress.co.jp/article/2003/09/19/silfade.html" target="_blank" class="red">アーカイブ</a></B>からどうぞ）<BR>
+            <BR>
+             当ソフトをレビューしていただき、<BR>
+            誠にありがとうございます！</TD>
+</TR>
+
+</TBODY>
+</TABLE>
+      <BR>
+      <BR>
+      
+<a id="character"></a>
+<BR><BR>
+<HR width="100%" size="1" color="#8888aa">
+      <BR>
+      
+      
+      
+<BR>
+<B><font size="+2">- ストーリー・キャラクター紹介 -</font></B><BR>
+</P>
+<CENTER>
+<TABLE class="gray" cellspacing="1" cellpadding="4">
+  <TBODY class=ten>
+    <TR>
+      <TD class="gray" nowrap>
+      <center><font class=fw>このゲームの概要</font></center>
+      </TD>
+    </TR>
+    <TR>
+      <TD class="white"><font class=fg>シルフェイド見聞録は、ファンタジー世界シルフェイドを主な舞台にした<BR>
+      アットホーム（スクール？）な連載アドベンチャーゲームです。<BR>
+      <BR>
+      このゲームの開発を開始したのが2001年4月6日。現在は6話で連載中断しています。<BR>
+      <BR>
+      略称は「シル見」で通っています。</font></TD>
+    </TR>
+  </TBODY>
+</TABLE>
+<BR>
+<BR>
+<BR>
+<TABLE class="gray" cellspacing="1" cellpadding="4">
+  <TBODY class="ten">
+    <TR>
+      <TD class="gray" nowrap>
+      <CENTER><FONT class="fw" size="+1">ストーリー紹介</FONT></CENTER>
+      </TD>
+    </TR>
+    <TR>
+      <TD class="mmgray" nowrap><FONT class="fw">■　シークエンス1　静かなる邂逅　■</font></TD>
+    </TR>
+    <TR>
+      <TD class="white"><FONT class="fg">とある街に住む少年、エシュターは、医者を目指すべくノーマ学院の<BR>
+      入学試験を受けるのだが、そこにはとんでもない連中が待ちかまえていた！<BR>
+      果たしてエシュターは無事、試験に合格する事ができるのか！？教頭の拳がうなる！<BR>
+      </FONT></TD>
+    </TR>
+    <TR>
+      <TD class="mmgray"><FONT class="fw">■　シークエンス2　導かれるまま　■</font></TD>
+    </TR>
+    <TR>
+      <TD class="white"><font class=fg>運良く入学試験に受かったエシュターたち三人だったが、<BR>
+      試験の結果が散々だったがゆえに学部の選択が大きく制限されてしまう。<BR>
+      医学部に入れない事がすでにわかっているエシュターは、<BR>
+      せめて少しでも目的に合った学部を探そうと奔走するのだが……。</font></TD>
+    </TR>
+    <TR>
+      <TD class="mmgray" nowrap><FONT class="fw">■　シークエンス3　真なる始動　■</FONT></TD>
+    </TR>
+    <TR>
+      <TD class="white"><FONT class="fg">シーナとレイシーを加え、無事に薬学部に入ったエシュター達。<BR>
+      ……が、ここから先は何言ってもネタバレになるので以降は予告なし（笑）<BR>
+      攻略（？）のヒント。好感度については次回の話になった時点でリセットする予定なので、<BR>
+      あまり上げても意味がないのである。その辺、御注意願いたい。</FONT></TD>
+    </TR>
+    <TR>
+      <TD class="mmgray" nowrap><FONT class="fw">■　シークエンス4　碧空を舞う梟　■</FONT></TD>
+    </TR>
+    <TR>
+      <TD class="white"><FONT class="fg">突如、退学の危機が訪れたエシュター。<BR>
+      彼は何としてでも、教頭に好かれて無理矢理な退学を阻止（？）する必要があった。<BR>
+      シーナから、「過去の剣闘大会で、ある人物が優勝以後教頭にひいきされていたらしい」<BR>
+      という情報を得たエシュターは、月末に開催される剣闘大会での優勝を目指して<BR>
+      特訓を開始するのだが……。<BR>
+      　※このシークエンスより戦闘システムが導入されています。<BR>
+      </FONT></TD>
+    </TR>
+    <TR>
+      <TD class="mmgray" nowrap><FONT class="fw">■　シークエンス5　静穏と波瀾と　■</FONT></TD>
+    </TR>
+    <TR>
+      <TD class="white"><FONT class="fg">無事退学の危機を乗り越えたエシュター。<BR>
+      だが試合のダメージで定期試験直前まで昏睡していた為、<BR>
+      エシュターはほとんど何も勉強しないまま定期試験に挑むことになってしまう。<BR>
+      「どうしよう、あまりにも点が悪いとまた退学の危機が……」<BR>
+      再び退学の危機に追い込まれたエシュター、<BR>
+      だが、よりによってそこへまた別の脅威が降りかってきて……。<BR>
+      </FONT></TD>
+    </TR>
+  </TBODY>
+</TABLE>
+</CENTER>
+
+<BR>
+<BR>
+<BR>
+<CENTER>
+<TABLE class="gray" cellspacing="1" cellpadding="0">
+  <TBODY class="ten">
+    <TR>
+      <TD class="gray" nowrap valign="middle" align="center">
+      <CENTER><FONT class="fw">　■　メインキャラクター紹介　■　</font></CENTER>
+      </TD>
+    </TR>
+    <TR>
+      <TD class="white">
+      <TABLE>
+        <TBODY class=ten>
+          <TR>
+            <TD nowrap><IMG src="chara/s_chara01.gif" border="1"></TD>
+            <TD><font class=fg>□<B>エシュター</B><BR>
+            　シルフェイド見聞録の主人公。<BR>
+            　真面目なハズなのだが、もともと不運な上に、<BR>
+            　目的の為には手段を選ばない性格がよく災いする。<BR>
+            　実は主要キャラクターの中で一番若くて身長が低い。</font></TD>
+          </TR>
+        </TBODY>
+      </TABLE>
+      </TD>
+    </TR>
+    <TR>
+      <TD class="white">
+      <TABLE>
+        <TBODY class="ten">
+          <TR>
+            <TD><IMG src="chara/s_chara02.gif" border="1"></TD>
+            <TD><font class=fg>□<B>ガゼル</B><BR>
+            　エシュターの親友。元は不良。<BR>
+            　多少ぶっきらぼうな面があるが、メインキャラの中では<BR>
+            　実は一番普通の（に近い？）人。</font></TD>
+          </TR>
+        </TBODY>
+      </TABLE>
+      </TD>
+    </TR>
+    <TR>
+      <TD class="white">
+      <TABLE>
+        <TBODY class="ten">
+          <TR>
+            <TD><IMG src="chara/s_chara03.gif" border="1"></TD>
+            <TD><font class=fg>□<B>アルバート</B><BR>
+            　エシュターをライバル視する眼帯長髪の人。<BR>
+            　真面目で冷静だが、色々と融通が効かない面がある。<BR>
+            　エシュターとよく「勝負」したがる。</font></TD>
+          </TR>
+        </TBODY>
+      </TABLE>
+      </TD>
+    </TR>
+    <TR>
+      <TD class="white">
+      <TABLE>
+        <TBODY class="ten">
+          <TR>
+            <TD><IMG src="chara/s_chara04.gif" border="1"></TD>
+            <TD><font class=fg>□<B>シーナ</B><BR>
+            　一応ヒロイン？エシュターとは試験会場で出会う。<BR>
+            　病弱でおとなしく、口数の少ない女の子。<BR>
+            　気分が悪いと口から色んな物（？）が出るのが欠点。</font></TD>
+          </TR>
+        </TBODY>
+      </TABLE>
+      </TD>
+    </TR>
+    <TR>
+      <TD class="white">
+      <TABLE>
+        <TBODY class="ten">
+          <TR>
+            <TD><IMG src="chara/s_chara06.gif" border="1"></TD>
+            <TD><font class=fg>□<B>セト</B><BR>
+            　医学部の学生で、なぜかエシュターのことを知っている。<BR>
+            　真面目で正義感に溢れる。臭いだけで人を<BR>
+            　区別できるほどの嗅覚の持ち主。</font></TD>
+          </TR>
+        </TBODY>
+      </TABLE>
+      </TD>
+    </TR>
+  </TBODY>
+</TABLE>
+</CENTER>
+      
+      <BR><BR>
+      
+      
+<a id="battle"></a>
+<BR><BR>
+<HR width="100%" size="1" color="#8888aa">
+      <BR>
+      
+      
+<B><font size="+2">- 戦闘システムの紹介 -</font></B><br>
+</P>
+<DIV class=fg>
+<TABLE>
+<TBODY>
+<TR>
+<TD nowrap width="30"></TD>
+<TD class="ten">
+<TABLE class="gray" cellspacing="1" cellpadding="4">
+<TBODY class=ten>
+<TR>
+<TD class="gray" nowrap><center><font class=fw>戦闘の流れとWILL（ウィル）システムについて</font></center></TD>
+</TR>
+<TR>
+<TD class="white"><font class=fg>まず、戦闘のステータスの読み方などを説明します。<BR>
+<BR>
+↓以下は、敵、味方、どちらも行動ゲージを溜めている途中で、ターンが回ってきていない状態です。<BR>
+<IMG src="battle_lecture/Normal.jpg" width="320" height="240" border="0"><BR></font>
+<HR>
+<FONT class="fg">
+<BR>
+　まず、各キャラクターのステータスから説明します。<BR>
+　キャラクターのステータス欄の上から順に、<BR>
+<BR>
+　―<FONT class="fg">―<FONT class="fg">―<FONT class="fg">―<FONT class="fg">―<FONT class="fg">―<FONT class="fg">―<FONT class="fg">―<FONT class="fg">―<FONT class="fg">―<FONT class="fg">―<FONT class="fg">―<FONT class="fg">―<FONT class="fg">―<FONT class="fg">―<FONT class="fg">―<FONT class="fg">―<FONT class="fg">―<FONT class="fg">―<FONT class="fg">―<FONT class="fg">―<FONT class="fg">―<FONT class="fg">―<FONT class="fg">―</FONT></FONT></FONT></FONT></FONT></FONT></FONT></FONT></FONT></FONT></FONT></FONT></FONT></FONT></FONT></FONT></FONT></FONT></FONT></FONT></FONT></FONT></FONT><BR>
+　　<B>キャラの名前</B>（例：エシュター）<BR>
+　　<B>行動ゲージ</B>（これが満タンになると行動できる）<BR>
+　　<B>LIFE（ライフ）　　　　　ライフの現在値/ライフの最大値</B>（敵の場合、ゲージのみ）<BR>
+　　<B>S･P（ｽﾀﾐﾅﾎﾟｲﾝﾄ）</B><B>　 スタミナゲージ</B><BR>
+　　<B>WILL（ウィル）</B><B>　　　　WILLの残りポイント</B><BR>
+<FONT class="fg"> 　―<FONT class="fg">―<FONT class="fg">―<FONT class="fg">―<FONT class="fg">―<FONT class="fg">―<FONT class="fg">―<FONT class="fg">―<FONT class="fg">―<FONT class="fg">―<FONT class="fg">―<FONT class="fg">―<FONT class="fg">―<FONT class="fg">―<FONT class="fg">―<FONT class="fg">―<FONT class="fg">―<FONT class="fg">―<FONT class="fg">―<FONT class="fg">―<FONT class="fg">―<FONT class="fg">―<FONT class="fg">―<FONT class="fg">―</FONT></FONT></FONT></FONT></FONT></FONT></FONT></FONT></FONT></FONT></FONT></FONT></FONT></FONT></FONT></FONT></FONT></FONT></FONT></FONT></FONT></FONT></FONT></FONT><BR>
+<BR>
+　となっています。それぞれの意味は、以下の通り。<BR><BR>
+<BR>
+　・<B>LIFE</B>が0になると敵に倒された事になり、行動不能（全員やられると全滅）になります。<BR>
+<BR>
+　・<B>S･P</B>はスキルの発動に必要で、足りない場合はスキルが発動できません。時間ごとに自然回復します。<BR>
+　（もっとも、スタミナの消費が少ない技が多い為、普段はあまり気にする必要はありません）<BR>
+<BR>
+　・<B>WILL</B>は主に攻撃・防御時に使用し、攻撃・防御の効果を高めるためのポイントです。<BR>
+　　自分のターンが回ってきた時に、一定ポイント回復します。<BR>
+<BR>
+</FONT>
+<HR>
+<FONT class="fg">
+<BR>
+　戦闘が始まると、敵、味方の行動ゲージが溜まっていき、満タンになった順に行動ができます。<BR>
+　以下より、味方の行動ターンにやるべき事、敵の行動ターンにやるべき事を説明していきます。<BR>
+<BR>
+</FONT>
+<HR>
+<FONT class="fg">
+<BR>
+<B>①味方の行動ターン</B><BR>
+<BR>
+　　<IMG src="battle_lecture/Attack1.jpg" width="320" height="240" border="0"><BR>
+　味方キャラのゲージが満タンになってターンが回ってくると、<BR>
+　↑のように、<B>キャラクターの使えるスキルの一覧が表示</B>されます。<BR>
+　ここでは、攻撃スキルの「<B>斬り・殴り</B>」を使ってみましょう。<BR>
+　（ちなみに、エシュターのS･Pのゲージの先っちょが赤くなっていますが、これは<B>使用スタミナ量</B>を表しています。<BR>
+　 「斬り・殴り」の使用スタミナ量は、非常に微々たるものなのです）<BR>
+<BR>
+　　　　　　　　↓　　「斬り・殴り」を選んで決定キーを押すと…<BR>
+<BR>
+　　<IMG src="battle_lecture/Attack2.jpg" border="0"><BR>
+　「斬り・殴り」を選択して決定キーを押すと、↑のように、<BR>
+　<B>攻撃先に「D、Hit、Will」などと書かれたウィンドウが出てきます</B>。<BR>
+　それぞれの意味を説明すると、<BR>
+<BR>
+<B>
+　　D　→　与えるダメージ<BR>
+　　Hit　→　命中率<BR>
+　　Will　→　攻撃に使用するWILLのポイント数　</B><BR>
+<BR>
+　を表しています。ここで<B>左右キーを入力すると、攻撃に使用するWILLの増減</B>ができます。<BR>
+<BR>
+　　<IMG src="battle_lecture/A_will1.jpg" width="148" height="98" border="0"><BR>
+　　使用WILLが０ポイントの状態。<BR>
+<BR>
+　　　　　　　　↓　右キーを押してWILLを追加すると…<BR>
+<BR>
+　　<IMG src="battle_lecture/A_willmax.jpg" border="0"><BR>
+　　これがWILLが最大（４ポイント）まで追加された状態。<BR>
+　　<B>ダメージ量や命中率のゲージが増えている</B>のがわかると思います。<BR>
+　　この状態で攻撃（決定キーを押す）すると、さきほどの、<BR>
+　　<B>WILLが０ポイントの時よりも命中しやすく、ダメージが大きくなる</B>わけです。<BR>
+<BR>
+　　　　　　　　↓　決定キーを押すと…・<BR>
+<BR>
+　　<IMG src="battle_lecture/A_damage.jpg" width="209" height="165" border="0"><BR>
+　　見事命中！攻撃先であるアルバートに、３８ポイントのダメージを与えました。<BR>
+<BR>
+<BR>
+[補足説明]<BR>
+<BR>
+　※多くの場合、WILLの使用量０でまともに攻撃が命中する事はまれです。<BR>
+　　WILLは毎ターン回復するので、ガシガシ使っていく方が戦闘に勝利しやすくなります。<BR>
+<BR>
+　※攻撃系のスキルには、それぞれ最大使用可能WILLが決まっています。<BR>
+　　「斬り・殴り」の場合は４ポイントですが、例えば「突き」だと最大７ポイントまで使用する事ができます。<BR>
+　　（WILLを多く費やせるスキルは、たいてい大きな攻撃力、および大きな効果を持っています）<BR>
+<BR>
+</FONT>
+<HR>
+<FONT class="fg"><BR>
+<B>②敵の行動ターン</B><BR>
+<BR>
+　次は敵の行動ターンです。<BR>
+<BR>
+　　<IMG src="battle_lecture/Guard.jpg" width="320" height="240" border="0"><BR>
+　　敵の行動ターンになると、↑のように攻撃ウィンドウが味方を指して表示されます。<BR>
+　　この状態は、「<B>アルバートに攻撃されかかっている</B>」状態を表しています。<BR>
+<BR>
+　　ちなみにここでは、「<B>D、Hit、Will</B>」はそれぞれ<BR>
+<FONT class="fg"><BR>
+<B>　　D　→　受けるダメージ<BR>
+　　Hit　→　命中率（攻撃を喰らう確率）<BR>
+　　Will　→　防御に使用するWILLのポイント数　</B><BR>
+</FONT><BR>
+　を表しています。また、攻撃ウィンドウの下の「<B>Parry</B>」というのは<B>防御方法</B>を表します。<BR>
+　ついでに説明すると、防御方法には二種類あって、<BR>
+<BR>
+<B>　　Parry（パリィ）　→　攻撃を回避するのを重視した防御方法<BR>
+　　　　　　　　　　　　　　（敵の命中率が下がる、喰らった時のダメージは変わらず）<BR>
+<BR>
+　　Guard（ガード）　→　攻撃のダメージを減らす事を重視した防御方法<BR>
+　　　　　　　　　　　　　　（喰らった時のダメージそのものを減らす、命中率はあまり下がらない）</B><BR>
+<BR>
+　となっています。後で、ガードの方も試してみることにします。<BR><BR>
+<BR><BR>
+　　<IMG src="battle_lecture/p_will0.jpg" border="0"><BR>
+　　防御方法は<B>Parry（パリィ）</B>で、使用WILLが０ポイントの状態。Hitゲージはかなり多いです。<BR>
+　　このままだと攻撃を受ける確率は大きいでしょう。<BR>
+<BR>
+<BR>
+　　　　　　　　　　　　　　　　　↓　　右（→）キーでWILLを追加して…<BR><BR>
+<BR>
+　　<IMG src="battle_lecture/p_will3.jpg" width="326" height="134" border="0"><BR>
+　　WILLを３ポイント追加した状態。Hitのゲージがさきほどより減少しているのがわかると思います。<BR>
+　　D（ダメージ）のゲージは変化無しです。<BR>
+　<BR>
+　※ちなみに、WILLの消費量は、WILLを使っているキャラのステータス欄に、赤く表示されています。<BR>
+　　（ここでは、エシュターのWILLが３ポイント分赤くなっています）<BR>
+<BR>
+<BR>
+<FONT class="fg">　　　　　　　　　　　　　　　　　↓　　右（→）キーでさらにWILLを追加して…<BR>
+<BR>
+</FONT>
+<BR>
+　　<IMG src="battle_lecture/p_will6.jpg" width="325" height="131" border="0"><BR>
+　　WILLを６ポイント追加した状態。Hitのゲージがかなり減少し、<BR>
+　　敵の攻撃を受ける確率がだいぶ減っています。実際、ここまで下がるとほとんど敵の攻撃を回避できます。<BR>
+　　もっとWILLを追加して敵の命中率を低下させる事も可能ですが、今回はこの辺で。<BR>
+<BR>
+　また、<B>防御時には上下（↑↓）キーで防御方法を変更</B>することができます。<BR>
+　ちょっとやってみましょう。<BR>
+<BR>
+　　　　　　　　　　　　　　　　↓　　上（↑）キーで防御方法を変更すると…（下キーでも可）<BR>
+<BR>
+<BR>
+　　<IMG src="battle_lecture/guard_max.jpg" width="333" height="135" border="0"><BR>
+　　これで、防御方法が<B>Guard（ガード）</B>になりました。<BR>
+　　D（ダメージ）のゲージの変化をわかりやすくするため、WILLを全開まで使用しています。<BR>
+　　Hit（喰らう確率）はParryの０ポイントの時よりも大きくなってしまっていますが、<BR>
+　　<B>D（ダメージ）はほぼ無いに等しい状態</B>になっています。<BR>
+　　これが、「ダメージそのものを減らす」ガードの効果です。<BR>
+<BR>
+　　この状態で決定キーを押すと、敵の攻撃が発動します。<BR>
+　　このゲームでは、「ダメージの受け方」もプレイヤーの皆さんの手にゆだねられています。<BR>
+　　パリィを多用してノーダメージで決めるも良し、ガードを多用して傷つきながらも慎重に闘うも良し、です。<BR>
+<BR>
+<BR>
+　[補足説明]<BR>
+<BR>
+　　※攻撃と違い、防御にはいくらでもWILLを使用することができます。<BR>
+　　　が、あまり防御に使いすぎると攻撃に回すWILLが少なくなり、<BR>
+　　　敵に与えるダメージが減ったり、攻撃が当たりづらくなったりします。配分をよく考えましょう。<BR>
+</FONT>
+<HR>
+<FONT class="fg"><BR>
+　以上で、戦闘の主な説明は終わりです。<BR>
+　攻撃、防御の両方にWILLをどう配分するかのコツを掴むのが、戦闘に勝利するための第一歩です。<BR>
+<BR>
+</FONT></TD>
+</TR>
+</TBODY>
+</TABLE><BR>
+</TD>
+</TR>
+</TBODY>
+</TABLE>
+      
+      <BR><BR>
+      
+      
+<a id="hint"></a>
+<BR><BR>
+<HR width="100%" size="1" color="#8888aa">
+      <BR>
+      
+      <B><font size="+2">- 攻略・オマケ要素 -</font></B></P>
+      
+<DIV class="fg" align="center">
+<TABLE>
+<TBODY>
+<TR>
+      <TD nowrap colspan="2">
+      <TABLE class="gray" cellspacing="1" cellpadding="3">
+        <TBODY class="ten">
+          <TR>
+            <TD class="mgray" nowrap valign="middle" align="center">
+            <CENTER><FONT class="fw">　■　オマケ情報　シークエンス４編　■　</font></CENTER>
+            </TD>
+          </TR>
+          <TR>
+            <TD class="white"><FONT class="fg">■<B>剣闘大会のチラシ</B>■<BR>
+            　　シークエンス４が始まって最初の学院マップで、４Ｆの廊下で<BR>
+            　　ベンチを調べると「剣闘大会のチラシ」が手に入る。<BR>
+            　　次の日、中央広場でそのチラシを使うと、レストールが持っていってしまう。<BR>
+            　　……ただそんだけ。</font></TD>
+          </TR>
+          <TR>
+            <TD class="white"><FONT class="fg">■<B>謎のメモ　-　多段撃（竜王の舞）を覚える</B>■<BR>
+            　　最初の学院マップが終わってシーナと一緒に本屋に帰った直後、<BR>
+            　　おじさんとボチに話しかけずに<B>速攻でシーナに話しかける</B>と、「謎のメモ」をもらえる。<BR>
+            　　メモをもらっていた場合、盗賊フォーゼルに襲われた次の日の学院マップになると<BR>
+            　　２Ｆの職員ロッカーに入る事ができるので「調べる」で教頭のロッカーを調べる。<BR>
+            　　その際、ロック解除のボタンを謎のメモ通りに入力すると……？</font></TD>
+          </TR>
+          <TR>
+            <TD class="white"><FONT class="fg">■<B>オリハルコンの指輪入手のために</B>■<BR>
+            　　<B>中央広場で商人の女の子と話した後</B>、闘技場でアルバートと訓練して<BR>
+            　　<B>二回以上勝利</B>し、かつ<B>「突き」を覚えている</B>状態で闘技場の地面を調べると<BR>
+            　　150シルバが手に入る。そのまますぐに中央広場に行けば、その金で<BR>
+            　　オリハルコンの指輪を買う事が可能。<BR>
+            　　戦闘中の行動速度がわずかに上がるので、あれば便利な代物。</FONT></TD>
+          </TR>
+        </TBODY>
+      </TABLE>
+      </TD>
+    </TR>
+</TBODY>
+</TABLE>
+<BR>
+<BR>
+<BR>
+<BR>
+
+<TABLE class="gray" cellspacing="1" cellpadding="4">
+<TBODY class=ten>
+<TR>
+<TD class="mmgray" nowrap><center><font class=fw>シークエンス４　戦闘指南</font></center></TD>
+</TR>
+<TR>
+<TD class="white"><font class=fg>戦闘は攻撃と防御に、毎ターン一定量回復する「WILL」というポイントを消費して<br>攻撃力、命中率や、防御、回避率をアップさせるするシステムを採用。<BR>
+詳細については劇中でそれなりに詳しく解説しているので、ここでは説明を省き、<BR>
+各相手の攻略について述べるとしよう。</font></TD>
+</TR>
+<TR>
+<TD class="mmgray" align="center"><font class=fw>レベルアップについて</font></TD>
+</TR>
+<TR>
+<TD class="white"><font class=fg>と、その前にレベルアップについて述べておく。<BR>
+レベルアップするのは、基本的に攻撃レベル、防御レベルの２つのみである。<BR>
+ステータスも設定されている事は設定されているが、<BR>
+特殊な事でも起こらない限りステータスレベルが上昇することはない。<BR>
+<BR>
+攻撃、防御レベル共々、経験値が100ポイント溜まるとレベルが上がる。<BR>
+一定レベルに到達すると経験値が極端に上がりにくくなるので、<BR>
+その場合は無理して戦闘を続ける必要はない。</font></TD>
+</TR>
+</TBODY>
+</TABLE>
+      <BR>
+      <BR>
+      <BR>
+<TABLE class="gray" cellspacing="1" cellpadding="4">
+<TBODY class="ten">
+<TR>
+<TD class="gray" nowrap>
+<CENTER><FONT class="fw">戦闘対策</FONT></CENTER>
+</TD>
+</TR>
+<TR>
+<TD class="mmgray" nowrap><FONT class="fw">■　闘技場　アルバートとの訓練　■</font></TD>
+</TR>
+<TR>
+<TD class="white"><FONT class="fg">アルバートが戦闘システムについて解説してくれる。<BR>
+防御方法は常に「ガード」を選択、１～２ポイントを防御に回し、<BR>
+残り全てのポイントを攻撃につぎ込めば、勝てる可能性が高くなる。<BR>
+この時点では、剣術の攻撃レベル２になればそれ以上戦闘する必要はない。<BR>
+</FONT></TD>
+</TR>
+<TR>
+<TD class="mmgray"><FONT class="fw">■　ノーマ学院　アルバートとの訓練２　■</font></TD>
+</TR>
+<TR>
+<TD class="white"><font class=fg>アルバートは前回と違って「突き」も使ってくる。<BR>
+一発目の威力は高いが、その次は弱い攻撃が二回ほど続き、また威力の高い一発を放つ……<BR>
+という周期で戦ってくる。<BR>
+軽く「斬り」を二発ほど当てた後、全力で「突き」攻撃をすれば簡単に倒せるだろう。<BR>
+戦闘が面倒な人は、ここで最低一回以上勝てば問題ない。
+</font></TD>
+</TR>
+<TR>
+<TD class="mmgray"><FONT class="fw">■　ノーマ学院　教頭との戦闘　■</font></TD>
+</TR>
+<TR>
+<TD class="white"><font class=fg>ここは教頭のデモンストレーションみたいなモンなので、本気で戦う必要はない。<BR>
+教頭は１回目に通常攻撃（斬りか突き）、２回目に竜王の舞を出してくるのが大半のケースで、<BR>
+この時の竜王の舞は命中率が１００％で、最低７発以上出してくるように<BR>
+設定されているために、事実上勝利することは不可能……なはず。<BR>
+</font></TD>
+</TR>
+
+<TR>
+<TD class="mmgray" nowrap><FONT class="fw">■　ノーマ学院　ナダとの手合い　■</FONT></TD>
+</TR>
+<TR>
+<TD class="white"><FONT class="fg">トーテムに目覚めた事もあって、戦闘にかなり余裕が出てくるはず。<BR>
+この辺りで防御レベルが３や４になっていれば、Parry（パリィ）で回避するのも容易になってくる。<BR>
+防御のためにWILLを残す事を忘れなければ、そう簡単に負ける事はないだろう。<BR>
+ただ、ナダはパリィによる防御を行ってるので、こちらの命中率が多少悪い。そこに注意。<BR>
+<BR>
+戦闘が面倒なら、攻撃、防御レベルが４以上あればそれ以上無理して戦う必要はない。<BR>
+剣闘大会で教頭に勝ちたいのなら、６、７レベルはあった方が良いかもしれない。</FONT></TD>
+</TR>
+<TR>
+<TD class="mmgray" nowrap><FONT class="fw">■　闘技場　準々決勝　ナダ戦　■</FONT></TD>
+</TR>
+<TR>
+<TD class="white"><FONT class="fg">前回と違い、ナダはガードを使ってダメージを減らしてくるのでダメージを与えにくい。<BR>
+が、こちらはパリィで相手の命中率を10％以内に抑えるか、ガードでダメージを20以下にしていれば<BR>
+ほぼ全く被害を受けずに倒す事ができるので、余裕のはず。<BR>
+</FONT></TD>
+</TR>
+<TR>
+<TD class="mmgray" nowrap><FONT class="fw">■　闘技場　準決勝　エルニード戦　■</FONT></TD>
+</TR>
+<TR>
+<TD class="white"><FONT class="fg">エルニードは攻撃力が異様に高いので、防御方法はガードよりパリィの方が良い。<BR>
+それさえ心がけていれば、ここまで来れた人なら特に問題なく倒せるだろう。<BR>
+</FONT></TD>
+</TR><TR>
+<TD class="mmgray" nowrap><FONT class="fw">■　闘技場　チンピラとの戦い　■</FONT></TD>
+</TR>
+<TR>
+<TD class="white"><FONT class="fg">WILLを全開にして「突き」を放てば、おそらく相手は一撃で沈むので、まず片方を速攻で片づけよう。<BR>
+それさえやれば、後はタイマンと何ら変わらない。もし一撃で倒せなかった場合は被害が大きくなるが、<BR>
+クリアするだけならこの戦いが終わった時にライフが残り少なくても、特に問題はない。<BR>
+</FONT></TD>
+</TR><TR>
+<TD class="mmgray" nowrap><FONT class="fw">■　闘技場　決勝戦　教頭（ロベルト）戦　■</FONT></TD>
+</TR>
+<TR>
+<TD class="white"><FONT class="fg">教頭は防御がクソ硬いので、全力の「突き」を放っても追加ライフ（治癒力）に阻まれる事が多い。<BR>
+WILL0ポイント消費の牽制攻撃で教頭のWILLを削りつつ、<BR>
+            運良く二回連続攻撃（相手の残りWILLが0で、防御不能な時）のチャンスが来たら、<BR>
+WILL全開の攻撃でダメージを与えよう。敵の攻撃はほとんどパリィで回避できるはず。<BR>
+            その気になったら「斬り」だけでも勝てる。<BR>
+            ちなみに、WILL全力の「多段撃」なら、追加ライフの上からでもダメージが入る事がある。<BR>
+<BR>
+            劇中では何も語られていないが、エシュターはライフが30以下になると、<br>
+            筋力（攻撃力）と反射神経（行動速度）、ついでに意志力が＋2Lvされるので、それを狙うと良い。<BR>
+            長期戦に持ち込んで命中・回避率の上昇を利用するのもマル。<BR>
+<BR>
+また闘技場での戦闘の中では、この戦いに限って勝っても負けてもストーリーが進む。<BR>
+負けた時の方が、マイアと教頭の会話が聞ける分、得かもしれない……。
+</FONT></TD>
+</TR>
+</TBODY>
+</TABLE>
+
+      <BR><BR>
+      
+      
+<a id="screenshot"></a>
+<BR><BR>
+<HR width="100%" size="1" color="#8888aa">
+      <BR>
+      
+<B><font size="+2">- スクリーンショット -</font></B></CENTER>
+<CENTER>
+<blockquote>
+<TABLE class="gray" cellspacing="1">
+  <TBODY class=ten>
+    <TR>
+      <TD nowrap class="white"><IMG src=screenshot/silfade_sc01.jpg border=0><BR>
+      シークエンス1　始まり</TD>
+      <TD nowrap class="white"><IMG src=screenshot/silfade_sc02.jpg border=0><BR>
+      シークエンス1</TD>
+    </TR>
+    <TR>
+      <TD nowrap class="white"><IMG src=screenshot/silfade_sc03.jpg border=0><BR>
+      移動時ウィンドウ</TD>
+      <TD nowrap class="white"><IMG src=screenshot/silfade_sc04.jpg border=0><BR>
+      シークエンス4</TD>
+    </TR>
+    <TR>
+      <TD nowrap class="white"><IMG src=screenshot/silfade_sc05.jpg border=0><BR>
+      シークエンス4、アルバートとの戦い</TD>
+      <TD nowrap class="white"><IMG src=screenshot/silfade_sc06.jpg border=0><BR>
+      シークエンス5</TD>
+    </TR>
+  </TBODY>
+</TABLE>
+
+
+      
+      <BR>      <BR>
+      </TD>
+    </TR>
+  </TBODY>
+</TABLE>
+  
+<HR size="1" align="center" width="600">
+<CENTER><FONT class="fg">Copyright(C)　<B>SmokingWOLF</B>　All rights reserved</font></CENTER>
+<HR align="center" width="600" size="1">
+  
+  </BODY>
+
+</HTML>
